@@ -1,0 +1,9 @@
+.MuiPaper-root {
+	width: 250px;
+}
+
+.header {
+	display: flex;
+	direction: column;
+}
+
