@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React from 'react';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from './menu/Menu';

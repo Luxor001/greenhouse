@@ -7,8 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Drawer from '@material-ui/core/Drawer';
 import EcoIcon from '@material-ui/icons/Eco';
 import React from 'react';
-import * as classes from './Menu.module.css';
-console.log(classes);
+import * as classes from './Menu.module.scss';
 
 function MenuComponent(props) {
 	const { window } = props;
@@ -23,13 +22,12 @@ function MenuComponent(props) {
 			classes={{
 				paper: classes.drawer
 			}}
-			style={classes.drawer}
 			ModalProps={{
 				keepMounted: true,
 			}}>
-			<header className={classes.header}>
-				<EcoIcon />
-				<span>Greenhouse</span>				
+			<header className="HFlex-container flex-middle">
+				<EcoIcon className={classes.icon}/>
+				<div className="title flex-fill">Greenhouse</div>				
 			</header>
 			<Divider />
 			<List>
