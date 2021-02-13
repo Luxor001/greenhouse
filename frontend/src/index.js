@@ -4,10 +4,13 @@ import './index.scss';
 import './globals.scss';
 import App from './App';
 import '@fontsource/roboto';
+import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <App />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
