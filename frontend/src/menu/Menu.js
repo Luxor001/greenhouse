@@ -8,7 +8,7 @@ import Drawer from '@material-ui/core/Drawer';
 import EcoIcon from '@material-ui/icons/Eco';
 import React from 'react';
 import * as classes from './Menu.module.scss';
-import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function MenuComponent(props) {
 	const { window } = props;

@@ -15,7 +15,7 @@ export const MenuStructure = [
 	},
 	{
 		text: 'Settings',
-		route: '/settings',
+		route: '/config',
 		icon: (<SettingsIcon />)
 	}
 ];
