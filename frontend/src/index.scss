@@ -1,3 +1,4 @@
+@import-normalize;
 @import './globals.scss';
 
 body {
@@ -12,4 +13,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navlink {
+  text-decoration: none !important;
+  color: black;
+
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+    color: black;
+  }
 }

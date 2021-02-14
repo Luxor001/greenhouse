@@ -8,6 +8,7 @@ import Drawer from '@material-ui/core/Drawer';
 import EcoIcon from '@material-ui/icons/Eco';
 import React from 'react';
 import * as classes from './Menu.module.scss';
+import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
 
 function MenuComponent(props) {
 	const { window } = props;
@@ -31,12 +32,16 @@ function MenuComponent(props) {
 			</header>
 			<Divider />
 			<List>
-				{MenuStructure.map((item) => {
-					return <ListItem button key={item.text}>
-						<ListItemIcon><React.Fragment>{item.icon}</React.Fragment></ListItemIcon>
-						<ListItemText primary={item.text} />
-					</ListItem>
-				})}
+				{MenuStructure.map((item) => 
+					<NavLink className="navlink" to={item.route} key={item.text} exact>
+						<ListItem button>
+							<ListItemIcon>
+								<React.Fragment>{item.icon}</React.Fragment>
+							</ListItemIcon>
+							<ListItemText primary={item.text} />
+						</ListItem>
+					</NavLink>
+				)}
 			</List>
 			<Divider />
 		</Drawer>
