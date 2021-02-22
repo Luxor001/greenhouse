@@ -16,9 +16,8 @@ function MenuComponent(props) {
 	return (
 		<Drawer
 			container={window !== undefined ? () => window().document.body : undefined}
-			variant="temporary"
+			variant="permanent"
 			anchor="left"
-			open={true}
 			width={300}
 			classes={{
 				paper: classes.drawer
@@ -26,9 +25,9 @@ function MenuComponent(props) {
 			ModalProps={{
 				keepMounted: true,
 			}}>
-			<header className="HFlex-container flex-middle">
+			<header className="HFlex-container">
 				<EcoIcon className={classes.icon}/>
-				<div className="title flex-fill">Greenhouse</div>				
+				<div className={classes.title}>Greenhouse</div>				
 			</header>
 			<Divider />
 			<List>
