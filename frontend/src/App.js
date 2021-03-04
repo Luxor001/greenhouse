@@ -5,9 +5,11 @@ import MainComponent from './main/MainComponent';
 
 function App() {
 	return (
-		<div className="App">
-			<Menu></Menu>
-			<MainComponent></MainComponent>
+		<div className="flex h100p">
+			<div class="HFlex-container">
+				<Menu class="h100p"></Menu>
+				<MainComponent></MainComponent>
+			</div>
 		</div>
 	);
 }
